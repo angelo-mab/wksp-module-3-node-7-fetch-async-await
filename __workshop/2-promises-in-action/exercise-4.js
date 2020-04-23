@@ -15,5 +15,7 @@ const getTronaldDump = async () => {
   }
 }
 
-getTronaldDump()
-  .then(data => console.log(data));
+// getTronaldDump()
+//   .then(data => console.log(data));
+
+module.exports = { getTronaldDump };

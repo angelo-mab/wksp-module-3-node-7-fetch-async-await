@@ -10,8 +10,10 @@ const getDadJoke = async () => {
 
   const joke = await request(options);
   const actualJoke = JSON.parse(joke);
-  
+
   return actualJoke.joke;
 }
-getDadJoke()
-  .then(data => console.log(data));
+// getDadJoke()
+//   .then(data => console.log(data));
+
+module.exports = { getDadJoke };
